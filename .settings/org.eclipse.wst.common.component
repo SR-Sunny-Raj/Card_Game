@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Java2_SunnyRaj_Assignment1">
+        <wb-resource deploy-path="/" source-path="/pages" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src" tag="defaultJavaSource"/>
+        <property name="context-root" value="Java2_SunnyRaj_Assignment1"/>
+        <property name="java-output-path" value="/Java2_SunnyRaj_Assignment1/bin"/>
+    </wb-module>
+</project-modules>

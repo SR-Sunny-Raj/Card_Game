@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,400;1,500;1,700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  /* background-color: lightgoldenrodyellow; */
+  background-image: url('../images/wooden.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  box-sizing: border-box;
+  margin-top: 4vh;
+  padding: 0 50px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+#box-1,
+#box-2 {
+  height: 500px;
+  padding: 2px 30px 40px 30px;
+  display: grid;
+  grid-template-rows: 100px 175px 30px 50px 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+#box-1.winner-box,
+#box-2.winner-box {
+  background-color: rgba(76, 175, 80, 0.5);
+  border: 1px solid rgba(76, 175, 80, 0.9);
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.9);
+}
+#box-1.loser-box,
+#box-2.loser-box {
+  background-color: rgba(255, 0, 0, 0.5);
+  border: 1px solid rgba(255, 0, 0, 0.9);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.9);
+}
+#box-1-1,
+#box-2-1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+#box-1-1 h5,
+#box-2-1 h5 {
+  text-decoration: underline #f88158;
+  text-decoration-thickness: 2px;
+}
+#card-1,
+#card-4 {
+  padding-left: 50px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#card-2,
+#card-5 {
+  padding-left: 50px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#card-3,
+#card-6 {
+  padding-left: 50px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#btn,
+#btn-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  height: auto;
+}
+#box-1-2,
+#box-2-2 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: grid;
+}
+#box-1-3,
+#box-2-3 {
+  height: 150px;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  display: grid;
+}
+#high-title-1,
+#high-1,
+#high-title-2,
+#high-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#points-earned-1,
+#points-1,
+#points-earned-2,
+#points-2 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+#points-earned-1,
+#points-earned-2 {
+  justify-self: center;
+}
+#points-1,
+#points-2 {
+  align-self: center;
+  padding-left: 175px;
+}
+#high-title-1,
+#high-title-2,
+#points-earned-1,
+#points-earned-2 {
+  text-decoration: underline #ffa500;
+  text-decoration-thickness: 2px;
+}
+
+.images,
+.images-1 {
+  height: 145px;
+  width: 100px;
+}
+#title {
+  position: relative;
+  z-index: 11;
+  display: table;
+  margin: 32px auto;
+  padding-bottom: 6px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: underline #21bfc2b3;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+#final {
+  text-align: center;
+  margin-top: 20px;
+}
+#win-row {
+  position: relative;
+}
+#new-game-button {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+}
+.images:hover,
+#button-1,
+#button-2,
+#final-button,
+#start-game-button,
+#new-game-button {
+  cursor: pointer;
+}
+.btns {
+  padding: 5px 5px 5px 5px;
+  background-color: #4caf50;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.btns:hover {
+  background-color: #45a049;
+  border: 1px solid #45a049;
+}
+#start-game-button,
+#button-1,
+#button-2 {
+  background-color: #21bfc2b3;
+  border: 1px solid #21bfc2b3;
+}
+#start-game-button:hover,
+#button-1:hover,
+#button-2:hover {
+  background-color: rgb(0, 116, 241);
+  border: 1px solid rgb(0, 116, 241);
+}
+#new-game-button {
+  background-color: #f88158;
+  border: 1px solid #f88158;
+  color: #000000;
+}
+#new-game-button:hover {
+  background-color: #ffa500;
+  border: 1px solid #ffa500;
+}
+.btns:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#button-1:disabled,
+#button-2:disabled,
+#final-button:disabled,
+#start-game-button:disabled,
+#new-game-button:disabled {
+  cursor: not-allowed;
+}
+
+#img-high-1,
+#img-high-2 {
+  display: none;
+}
+
+#name-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/new_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+#name-modal-box {
+  width: 380px;
+  background-color: rgba(137, 221, 214, 0.356);
+  box-shadow: 0px 0px 5px rgb(100, 172, 219);
+  border-radius: 12px;
+  padding: 35px;
+  text-align: center;
+}
+#name-modal-box input[type='text'] {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 0 20px;
+  padding: 8px 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+}
+#name-modal-box input[type='text']:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px rgb(100, 172, 219);
+}
+#name-modal-box h4 {
+  display: inline-block;
+  margin: 0 0 25px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: underline #21bfc2b3;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+#name-modal-box label {
+  display: block;
+  margin: 0 0 6px;
+  text-align: left;
+  font-weight: 700;
+}
+#start-game-button {
+  padding: 8px 25px;
+  font-weight: 700;
+}
+
+/* Tablet: shrink spacing/sizing but keep the two-column board layout */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+    grid-gap: 20px;
+  }
+  #box-1,
+  #box-2 {
+    height: auto;
+    padding: 2px 15px 25px 15px;
+    grid-template-rows: 90px 150px 30px 45px auto;
+  }
+  #box-1-3,
+  #box-2-3 {
+    height: auto;
+    min-height: 130px;
+  }
+  .images,
+  .images-1 {
+    height: 115px;
+    width: 80px;
+  }
+  #card-2,
+  #card-3,
+  #card-5,
+  #card-6 {
+    padding-left: 20px;
+  }
+  #card-1,
+  #card-4 {
+    padding-left: 15px;
+  }
+  #card-3,
+  #card-6 {
+    padding-right: 15px;
+  }
+  #high-1,
+  #high-2 {
+    align-self: center;
+    padding-left: 15px;
+  }
+  #points-1,
+  #points-2 {
+    align-self: center;
+    justify-self: center;
+    padding-right: 33px;
+    padding-left: 0;
+  }
+  #title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablet only (769px-1024px): stack layout without affecting mobile/desktop breakpoints */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  #box-1,
+  #box-2 {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  #box-1 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Tablet/mobile: stack the two player boards instead of side-by-side */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  #box-1,
+  #box-2 {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  #box-1 {
+    margin-bottom: 30px;
+  }
+}
+
+/* Mobile: tighter spacing, smaller cards/text, stacked final-round controls */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+    grid-gap: 15px;
+    margin-top: 2vh;
+  }
+  #box-1,
+  #box-2 {
+    max-width: 100%;
+    height: 391px;
+    padding: 2px 10px 20px 10px;
+    grid-template-rows: 80px 130px 30px 40px auto;
+  }
+  .images,
+  .images-1 {
+    height: 85px;
+    width: 58px;
+  }
+  #box-1-1 h5,
+  #box-2-1 h5 {
+    padding-left: 10px;
+  }
+  #card-1,
+  #card-2,
+  #card-3,
+  #card-4,
+  #card-5,
+  #card-6 {
+    padding-left: 10px;
+    align-self: center;
+  }
+  #card-3,
+  #card-6 {
+    padding-right: 10px;
+  }
+  #high-1,
+  #high-2 {
+    padding-left: 16px;
+    align-self: center;
+  }
+  #high-title-1,
+  #high-title-2 {
+    padding-left: 10px;
+  }
+  #points-1,
+  #points-2 {
+    justify-self: center;
+    padding-right: 33px;
+    padding-left: 0;
+    align-self: center;
+  }
+  #title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-decoration: underline #21bfc2b3;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    margin: 20px auto;
+  }
+  #name-modal-box {
+    width: 90%;
+    max-width: 340px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 20px;
+  }
+  #final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #win-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #win,
+  #score {
+    margin: 0;
+  }
+  #new-game-button {
+    position: static;
+    transform: none;
+  }
+  #final-button,
+  #new-game-button {
+    margin-bottom: 20px;
+  }
+}
